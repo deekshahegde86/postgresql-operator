@@ -1,0 +1,14 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: vol-postgres
+subjects:
+- kind: ServiceAccount
+  name: vol-postgres
+- kind: User
+  name: defaultadmin
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: vol-postgres
+  apiGroup: rbac.authorization.k8s.io

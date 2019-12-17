@@ -1,0 +1,8 @@
+apiVersion: postgres.example.com/v1alpha1
+kind: PostgresAdv
+metadata:
+  name: example-postgresadv
+spec:
+  # Add fields here
+  image: postgres:10.4
+  size: 3

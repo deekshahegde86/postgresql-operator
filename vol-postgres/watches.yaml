@@ -1,0 +1,5 @@
+---
+- version: v1alpha1
+  group: postgres.example.com
+  kind: Postgresql
+  role: /opt/ansible/roles/postgresql
